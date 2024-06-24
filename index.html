@@ -4,20 +4,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photobooth.unikomi</title>
+  <meta name="description"
+    content="Photobooth Unikomi: Layanan fotobooth yang unik untuk meriahkan acara istimewa Anda. Nikmati momen tak terlupakan dengan foto-foto kreatif dari fotobooth kami.">
+  <meta name="keywords" content="Photobooth Unikomi, fotobooth, acara, pengabadian, gambar, kreatif, menyeronokkan">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Photobooth Unikomi | Layanan Fotobooth yang Unik">
+  <meta property="og:description"
+    content="Photobooth Unikomi: Layanan fotobooth yang unik untuk meriahkan acara istimewa Anda. Nikmati momen tak terlupakan dengan foto-foto kreatif dari fotobooth kami.">
+  <meta property="og:image" content="https://photobooth.unikomi.com/assets/icon.png">
+  <meta property="og:url" content="https://photobooth.unikomi.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Photobooth Unikomi: Layanan Fotobooth yang Unik">
+  <meta name="twitter:description"
+    content="Photobooth Unikomi: Layanan fotobooth yang unik untuk meriahkan acara istimewa Anda. Nikmati momen tak terlupakan dengan foto-foto kreatif dari fotobooth kami.">
+  <meta name="twitter:image" content="https://photobooth.unikomi.com/assets/icon.png">
+  <link rel="icon" href="https://photobooth.unikomi.com/assets/icon.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Alpine Plugins -->
   <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
 
   <!-- Alpine Core -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll('.scroll-element');
 
+      function handleScroll() {
+        elements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const viewportHeight = window.innerHeight;
+
+          if (elementTop < viewportHeight - 50) {
+            element.classList.add('opacity-100');
+            element.classList.remove('opacity-0');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', handleScroll);
+
+      // Trigger the scroll event once to check the initial position
+      handleScroll();
+    });</script>
 </head>
 
 <body>
 
 
-  <div style="background-image: url('./assets/scenery.jpg'); height: 100vh;"
+  <div style="background-image: url('./assets/background2.jpg'); height: 100vh;"
     class="relative overflow-hidden  bg-cover bg-no-repeat  text-start ">
 
     <div class="relative isolate">
@@ -49,57 +83,58 @@
         <div class="mx-auto max-w-7xl px-6 pb-32 pt-8  lg:px-8 lg:pt-8">
           <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div class="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-              <h1 class="text-4xl font-bold tracking-tight text-black sm:text-6xl">Smile, connect,
-                repeat. It's the rhythm of life..</h1>
-              <p class="mt-6 text-lg  text-gray-700 sm:max-w-md lg:max-w-none">Capture the
-                moments that bring us together, and you'll capture the essence of life.</p>
+              <h1
+                class="text-4xl font-bold tracking-tight text-black sm:text-6xl opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+                Senyuman dan kenangan indah bersama
+              </h1>
+              <p
+                class="mt-6 text-lg  text-gray-700 sm:max-w-md lg:max-w-none opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+                Abadikan detik terindah dalam hidup anda.
+              </p>
               <div class="mt-10 flex items-center gap-x-6">
-                <a href="#"
-                  class="rounded-md bg-sky-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">Get
-                  started</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Live demo <span
-                    aria-hidden="true">→</span></a>
+
+                <a aria-label="Chat on WhatsApp"
+                  class="opacity-0 transition-opacity duration-2000 ease-in-out scroll-element"
+                  href="https://wa.me/60192892305?text=Saya%20ingin%20mendapatkan%20tempahan%20photobooth">
+                  <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg" />
+                </a>
+
               </div>
             </div>
             <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
               <div
                 class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                 <div class="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <img src="assets/hightea1.jpeg" alt=""
+                    class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                   </div>
                 </div>
               </div>
               <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                 <div class="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <img src="assets/adi.jpeg" alt=""
+                    class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                   </div>
                 </div>
                 <div class="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
-                    alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <img src="assets/semarak.jpeg" alt=""
+                    class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                   </div>
                 </div>
               </div>
               <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                 <div class="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                    alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <img src="assets/um.jpeg" alt=""
+                    class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                   </div>
                 </div>
                 <div class="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                    alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <img src="assets/ateez.jpeg" alt=""
+                    class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                   </div>
                 </div>
@@ -116,13 +151,21 @@
       <div
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
         <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Photobooth Experience
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+            Pengalaman Fotobooth Kami
+
+
           </h2>
-          <p class="mt-6 text-xl leading-8 text-gray-600">Step into our sleek and modern photobooths and let
-            the fun begin! Equipped with high-resolution cameras, interactive touchscreens, and a plethora
-            of digital props and filters, our photobooths are designed to entertain guests of all ages.
-            Whether it's striking a pose with friends or making silly faces with loved ones, our photobooth
-            experience guarantees laughter and joy.</p>
+          <p
+            class="mt-6 text-xl leading-8 text-gray-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+            Rasai pengalaman unik dan menyeronokkan di dalam fotobooth
+            kami yang penuh gaya! Dilengkapi dengan kamera beresolusi tinggi, skrin sentuh interaktif, dan pelbagai
+            pilihan prop serta penapis digital, fotobooth kami menjanjikan kegembiraan untuk semua. Sama ada bergaya
+            dengan rakan-rakan atau berkongsi detik manis bersama yang tersayang, setiap gambar adalah kenangan abadi
+            yang akan membuatkan anda tersenyum.
+
+          </p>
           <!-- <p class="mt-6 text-base leading-7 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Quasi aperiam sit non sit neque reprehenderit.</p> -->
           <div class="mt-10 flex">
             <!-- <a href="#"
@@ -133,26 +176,22 @@
         </div>
         <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
           <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-            <img
-              src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
-              alt="" class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover">
+            <img src="assets/adi1.jpeg" alt=""
+              class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover">
           </div>
           <div
             class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
             <div class="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-              <img
-                src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
-                alt="" class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
+              <img src="assets/um2.jpeg" alt=""
+                class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
             </div>
             <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-              <img
-                src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
-                alt="" class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
+              <img src="assets/um3.jpeg" alt=""
+                class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
             </div>
             <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-              <img
-                src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
-                alt="" class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover">
+              <img src="assets/um4.jpeg" alt=""
+                class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover">
             </div>
           </div>
         </div>
@@ -163,28 +202,40 @@
   <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-4xl sm:text-center">
-        <h2 class="text-base font-semibold leading-7 text-sky-600">Pricing</h2>
-        <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Packages Tailored for You</p>
+        <h2
+          class="text-base font-semibold leading-7 text-sky-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+          Harga</h2>
+        <p
+          class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+          Pakej Disesuaikan Untuk Anda
+
+        </p>
       </div>
-      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-center">We understand that every event is
-        unique, which is why we offer customizable packages to suit your specific needs. Choose from our range of
-        options, including:</p>
+      <p
+        class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-center opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+        Kami memahami bahawa setiap acara adalah unik, sebab itu kami menawarkan pakej yang boleh disesuaikan mengikut
+        keperluan khusus anda. Pilih daripada pelbagai pilihan kami, termasuk:
+
+      </p>
       <div class="mt-20 flow-root">
         <div
           class="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-gray-100 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-2 lg:divide-x lg:divide-y-0 xl:-mx-4">
           <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-            <h3 id="tier-basic" class="text-base font-semibold leading-7 text-gray-900">Photobooth</h3>
+            <h3 id="tier-basic"
+              class="text-base font-semibold leading-7 text-gray-900 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+              Photobooth</h3>
             <p class="mt-6 flex items-baseline gap-x-1">
-              <span class="text-5xl font-bold tracking-tight text-gray-900">RM 899</span>
-              <span class="text-sm font-semibold leading-6 text-gray-600">only</span>
+              <span
+                class="text-5xl font-bold tracking-tight text-gray-900 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">RM
+                899</span>
+              <span
+                class="text-sm font-semibold leading-6 text-gray-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">sahaja</span>
             </p>
             <!-- <p class="mt-3 text-sm leading-6 text-gray-500">$12 per month if paid annually</p> -->
-            <a href="#" aria-describedby="tier-basic"
-              class="mt-10 block rounded-md bg-sky-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">Buy
-              plan</a>
-            <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Everything necessary to get started.</p>
+
+            <!-- <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Everything necessary to get started.</p> -->
             <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-              <li class="flex gap-x-3">
+              <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                 <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -192,7 +243,7 @@
                 </svg>
                 5 custom frame
               </li>
-              <li class="flex gap-x-3">
+              <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                 <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -200,15 +251,15 @@
                 </svg>
                 unlimited shots/print 4R
               </li>
-              <li class="flex gap-x-3">
+              <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                 <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                     clip-rule="evenodd" />
                 </svg>
-                digital copy
+                digital copy (salinan digital)
               </li>
-              <li class="flex gap-x-3">
+              <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                 <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -219,19 +270,20 @@
             </ul>
           </div>
           <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-            <h3 id="tier-essential" class="text-base font-semibold leading-7 text-gray-900">Photobooth & Audiobook</h3>
+            <h3 id="tier-essential"
+              class="text-base font-semibold leading-7 text-gray-900 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+              Photobooth & Audiobook</h3>
             <p class="mt-6 flex items-baseline gap-x-1">
-              <span class="text-5xl font-bold tracking-tight text-gray-900">RM 1099</span>
-              <span class="text-sm font-semibold leading-6 text-gray-600">only</span>
+              <span
+                class="text-5xl font-bold tracking-tight text-gray-900 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">RM
+                1099</span>
+              <span
+                class="text-sm font-semibold leading-6 text-gray-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">sahaja</span>
             </p>
             <!-- <p class="mt-3 text-sm leading-6 text-gray-500">$24 per month if paid annually</p> -->
-            <a href="#" aria-describedby="tier-essential"
-              class="mt-10 block rounded-md bg-sky-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">
-              Buy plan</a>
-            <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Everything in Basic, plus essential tools for
-              growing your business.</p>
+
             <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-              <li class="flex gap-x-3">
+              <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                 <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -239,7 +291,7 @@
                 </svg>
                 5 custom frame
               </li>
-              <li class="flex gap-x-3">
+              <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                 <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -247,15 +299,15 @@
                 </svg>
                 Unlimited shots/print 4R
               </li>
-              <li class="flex gap-x-3">
+              <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                 <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                     clip-rule="evenodd" />
                 </svg>
-                Digital copy
+                Digital copy (salinan digital)
               </li>
-              <li class="flex gap-x-3">
+              <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                 <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -263,7 +315,7 @@
                 </svg>
                 Professional setup
               </li>
-              <li class="flex gap-x-3 font-bold">
+              <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element font-bold">
                 <svg class="h-6 w-5 flex-none text-sky-600 " viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -277,23 +329,30 @@
       </div>
     </div>
   </div>
-  <div style="background-image: url('./assets/scenery2.jpg'); height: 100vh;"
+  <div style="background-image: url('./assets/bg4.jpg'); height: 100vh;"
     class="relative overflow-hidden  bg-cover bg-no-repeat  text-start ">
     <div class="relative isolate overflow-hidden ">
       <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-black sm:text-4xl">Hassle-Free Booking</h2>
-          <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-900">Planning your event should be stress-free, which is why we've made our booking process as simple as possible. Just contact our friendly team, and we'll guide you through the process, helping you choose the perfect package for your event. We'll handle the setup, operation, and takedown, so you can focus on enjoying your special day.</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#"
-              class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get
-              started</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span
-                aria-hidden="true">→</span></a>
+        <div class="mx-auto max-w-2xl text-left">
+          <h2
+            class="text-3xl font-bold tracking-tight text-black sm:text-4xl opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+            Tempah Hari Ini</h2>
+          <p
+            class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-900 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+            Merancang acara anda seharusnya bebas dari tekanan, sebab itu kami membuat proses tempahan semudah mungkin.
+            Hubungi pasukan mesra kami, dan kami akan membimbing anda sepanjang proses ini, membantu anda memilih pakej
+            yang sempurna untuk acara anda. Kami akan menguruskan penyediaan, operasi, dan penutupan, supaya anda dapat
+            memberi tumpuan untuk menikmati hari istimewa anda.</p>
+          <div class="mt-10 flex items-center justify-left gap-x-6">
+            <a aria-label="Chat on WhatsApp"
+              class="opacity-0 transition-opacity duration-2000 ease-in-out scroll-element"
+              href="https://wa.me/60192892305?text=Saya%20ingin%20mendapatkan%20tempahan%20photobooth">
+              <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg" />
+            </a>
           </div>
         </div>
       </div>
-     
+
     </div>
   </div>
 
